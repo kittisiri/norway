@@ -129940,8 +129940,12 @@ let currentPaths = [];
 let currentMarkers = [];
 
 const daysListEl = document.getElementById('days-list');
-const mobileToggle = document.getElementById('mobile-toggle');
 const sidebar = document.getElementById('sidebar');
+
+// Mobile Nav Elements
+const mobileNavSelectDay = document.getElementById('mobile-nav-select-day');
+const mobileNavItinerary = document.getElementById('mobile-nav-itinerary');
+const mobileNavGuide = document.getElementById('mobile-nav-guide');
 
 // Add "Show Entire Trip" Card
 const allDaysCard = document.createElement('div');
@@ -129956,7 +129960,7 @@ allDaysCard.addEventListener('click', () => {
   allDaysCard.classList.add('active');
   if (window.innerWidth <= 768) {
     sidebar.classList.remove('open');
-    mobileToggle.innerText = 'View Itinerary';
+    mobileNavSelectDay.classList.remove('active');
   }
   renderAllDays();
 });
@@ -129979,7 +129983,7 @@ itinerary.forEach((dayObj, index) => {
     
     if (window.innerWidth <= 768) {
       sidebar.classList.remove('open');
-      mobileToggle.innerText = 'View Itinerary';
+      mobileNavSelectDay.classList.remove('active');
     }
     
     renderDay(index);
@@ -129988,13 +129992,25 @@ itinerary.forEach((dayObj, index) => {
   daysListEl.appendChild(card);
 });
 
-mobileToggle.addEventListener('click', () => {
+mobileNavSelectDay.addEventListener('click', () => {
   sidebar.classList.toggle('open');
   if (sidebar.classList.contains('open')) {
-    mobileToggle.innerText = 'View Map';
+    mobileNavSelectDay.classList.add('active');
   } else {
-    mobileToggle.innerText = 'View Itinerary';
+    mobileNavSelectDay.classList.remove('active');
   }
+});
+
+mobileNavItinerary.addEventListener('click', () => {
+  currentDoc = 'itinerary';
+  renderMarkdown();
+  modal.classList.add('open');
+});
+
+mobileNavGuide.addEventListener('click', () => {
+  currentDoc = 'guide';
+  renderMarkdown();
+  modal.classList.add('open');
 });
 
 function createMarker(m) {

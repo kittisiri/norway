@@ -173,30 +173,44 @@ body {
   background: white;
 }
 
-/* Mobile Toggle Button */
-.mobile-toggle {
+/* Mobile Navigation Bar */
+.mobile-nav {
   display: none;
   position: absolute;
-  top: 16px;
+  bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2000;
-  background: var(--text-primary);
-  color: white;
-  border: 1px solid rgba(255,255,255,0.2);
-  padding: 14px 28px;
-  border-radius: 9999px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  cursor: pointer;
-  transition: all 0.2s;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  padding: 6px;
+  gap: 8px;
+  width: 92%;
+  max-width: 400px;
 }
 
-.mobile-toggle:hover {
-  background: var(--accent-hover);
-  transform: translateX(-50%) scale(1.05);
+.mobile-nav-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 4px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.mobile-nav-btn:hover, .mobile-nav-btn.active {
+  background: #f1f5f9;
 }
 
 /* Custom Permanent Tooltip */
@@ -223,7 +237,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    height: 60vh;
+    height: 85dvh;
     width: 100%;
     transform: translateY(-100%);
     border-right: none;
@@ -231,12 +245,16 @@ body {
     border-radius: 0 0 24px 24px;
   }
   
+  .sidebar-header .button-group {
+    display: none;
+  }
+  
   .sidebar.open {
     transform: translateY(0);
   }
   
-  .mobile-toggle {
-    display: block;
+  .mobile-nav {
+    display: flex;
   }
   
   .modal-content {
