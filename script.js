@@ -5,7 +5,7 @@ const GUIDE_ENG = "# Norway Road Trip: Essential Survival & Prep Guide\n\nThis d
 
 const itinerary = [
   {
-    "day": "Day 1 (30 May)",
+    "day": "30 May",
     "title": "Arrival in Troms\u00f8",
     "desc": "Arrive at TOS, pick up the Volvo XC90, and head to Troms\u00f8 City Center.",
     "highlights": "Storgata, Fiskekompaniet",
@@ -2209,7 +2209,7 @@ const itinerary = [
     ]
   },
   {
-    "day": "Day 2 (31 May)",
+    "day": "31 May",
     "title": "Troms\u00f8 Sightseeing",
     "desc": "Explore the Arctic Cathedral and take the cable car up for the Midnight Sun.",
     "highlights": "Fjellheisen, Arctic Cathedral",
@@ -4957,7 +4957,7 @@ const itinerary = [
     ]
   },
   {
-    "day": "Day 3 (1 June)",
+    "day": "1 June",
     "title": "Troms\u00f8 to Senja",
     "desc": "Drive to Brensholmen, take the ferry to Senja, and explore the fairy-tale island.",
     "highlights": "Sommar\u00f8y, Hus\u00f8y",
@@ -26879,7 +26879,7 @@ const itinerary = [
     ]
   },
   {
-    "day": "Day 4 (2 June)",
+    "day": "2 June",
     "title": "Senja to And\u00f8ya",
     "desc": "Drive the Senja Scenic Route, then take the Gryllefjord ferry to Andenes.",
     "highlights": "Tungeneset, Bergsbotn",
@@ -34011,7 +34011,7 @@ const itinerary = [
     ]
   },
   {
-    "day": "Day 5 (3 June)",
+    "day": "3 June",
     "title": "And\u00f8ya to Svolv\u00e6r",
     "desc": "Drive the And\u00f8ya Scenic route, pass through the Blue City, and arrive in Lofoten.",
     "highlights": "Bleik Beach, Sortland",
@@ -58543,7 +58543,7 @@ const itinerary = [
     ]
   },
   {
-    "day": "Day 6 (4 June)",
+    "day": "4 June",
     "title": "Svolv\u00e6r Sightseeing",
     "desc": "Explore Svolv\u00e6r and the Venice of Lofoten, Henningsv\u00e6r.",
     "highlights": "Henningsv\u00e6r Football Field",
@@ -65887,7 +65887,7 @@ const itinerary = [
     ]
   },
   {
-    "day": "Day 7 (5 June)",
+    "day": "5 June",
     "title": "Svolv\u00e6r to Reine",
     "desc": "Drive south through the archipelago, stopping at beautiful beaches and historic villages.",
     "highlights": "Haukland Beach, Nusfjord",
@@ -85149,7 +85149,7 @@ const itinerary = [
     ]
   },
   {
-    "day": "Day 8 & 9 (6-7 June)",
+    "day": "6-7 June",
     "title": "Reine & Hamn\u00f8y",
     "desc": "Hike Reinebringen, visit the famous yellow cabins at Sakris\u00f8y, and explore \u00c5.",
     "highlights": "Reinebringen, Sakris\u00f8y, \u00c5 i Lofoten",
@@ -92635,7 +92635,7 @@ const itinerary = [
     ]
   },
   {
-    "day": "Day 10 (8 June)",
+    "day": "8 June",
     "title": "Reine to Evenes Airport",
     "desc": "The longest driving day. Enjoy the scenic E10 back to EVE and fly to Oslo.",
     "highlights": "Scenic E10 Drive",
@@ -129827,7 +129827,7 @@ const itinerary = [
     ]
   },
   {
-    "day": "Day 11 & 12 (9-10 June)",
+    "day": "9-10 June",
     "title": "Oslo Sightseeing",
     "desc": "Explore the capital. Visit Vigeland Park, the Opera House, and Munch Museum.",
     "highlights": "Vigeland Park, Opera House",
